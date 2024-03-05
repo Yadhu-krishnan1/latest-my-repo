@@ -1,14 +1,14 @@
 import json
 
 def lambda_handler(event, context):
-    # Parse the input event
-    name = event['name']
+    # Parse input event
+    name = event['name'] if 'name' in event else 'Guest'
     
-    # Process the input and generate a response
-    greeting = f"Hello, {name}! This is a Lambda function written in Python11."
-    
-    # Return a response
-    return {
+    # Generate response
+    response = {
         'statusCode': 200,
-        'body': json.dumps(greeting)
+        'body': json.dumps({'message': f'Hello, {name}! Welcome to Lambda function.'})
     }
+    
+    return response
+
