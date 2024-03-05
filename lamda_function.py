@@ -5,7 +5,7 @@ def lambda_handler(event, context):
     name = event['name']
     
     # Process the input and generate a response
-    greeting = f"Hello, {name}! This is a Lambda function written in Python1."
+    greeting = f"Hello, {name}! This is a Lambda function written in Python11."
     
     # Return a response
     return {
