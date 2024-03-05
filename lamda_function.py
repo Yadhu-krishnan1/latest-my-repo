@@ -7,7 +7,7 @@ def lambda_handler(event, context):
     # Generate response
     response = {
         'statusCode': 200,
-        'body': json.dumps({'message': f'Hello, {name}! Welcome to Lambda function1.'})
+        'body': json.dumps({'message': f'Hello, {name}! Welcome to Lambda function11.'})
     }
     
     return response
